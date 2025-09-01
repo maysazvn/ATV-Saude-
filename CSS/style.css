@@ -7,3 +7,9 @@ a{
     text-decoration: none; /* remove o sublinhado dos links */
     color: black; /* altera a cor de todos os links das páginas */
 }
+
+/*---------------Header---------------*/
+
+header nav h2{
+    display: flex;
+}
