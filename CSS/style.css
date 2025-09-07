@@ -9,18 +9,32 @@ a{
 }
 
 /*---------------Header---------------*/
+/* não é recomendado fazer isso, pq vai ser muito ruim em diferentes telas
 header nav h2{
   margin-right: 60vw;
+}*/ 
+
+header{
+padding: 2vw 3vw; /*em vez daquilo de cima, use o padding, que vai adicionar espaçamento interno ao oq vc escolher*/
 }
-header nav {
-    display: flex;
-    justify-content: space-between;
-}
+
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 17px 0 17px;
+}
+
+/*transforma a elipse e o saude em div pra juntá-los*/
+header div.logo{
+display: flex; /*para deixar eles alinhados*/
+gap: 10px; /*para eles n ficarem colados*/
+align-items: center; /*alinha verticalmente, pro texto n ficar mt em cima ou em baixo*/
+}
+
+/*diminuir o tamanho da elipse (img). nao recomendo por height, apenas width pq aí ele diminui em escala. e recomendo por em porcentagem pra se adaptar em diferentes telas*/
+header nav img{
+width: 60%;
 }
 header nav ul{
   display: flex;
@@ -30,21 +44,39 @@ header ul li{
   color: #7D7987;
   padding: 0 20px;
 }
-header span{
+
+/*a partir daqui, é melhor colocar header section.saberMais*/
+
+header section.saberMais{
+padding: 3vw; /*adicionei espaçamento interno*/
+display: flex;
+justify-content: space-between; /*adicionei display e space-between para deixar as coisas lado a lado*/
+}
+
+header section.saberMais div.textos{ /*aqui eu coloco display block, pros textos em si n ficarem lado a lado*/
+display: block;
+}
+
+header section.saberMais span{
   color: #458FF6;
 }
+
 header p{
   color: #7D7987;
 }
+
 header button{
   background-color: #458FF6;
   color: white;
   padding: 5px 20px 5px 20px;
   border-radius: 20px;
 }
+
+/* apagar este, por estar pegando todas as imagens
 header img{
   width: 30vw;
-}
+}*/
+
 header section.saberMais p{
  text-align: right;
 }
@@ -57,3 +89,5 @@ section.cuidados div ul li{
   display: flex;
   justify-content: space-between;
 }
+
+/*agora acredito que vc consegue arrumar o resto, que é basicamente só usar as mesmas coisas q eu falei :)*/
