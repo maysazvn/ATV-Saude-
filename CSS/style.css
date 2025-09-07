@@ -10,6 +10,35 @@ a{
 
 /*---------------Header---------------*/
 
-header nav h2{
+header nav {
     display: flex;
+    justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 17px 0 17px;
+}
+header ul li{
+  color: #7D7987;
+}
+header span{
+  color: #458FF6;
+}
+header p{
+  color: #7D7987;
+}
+header button{
+  background-color: #458FF6;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+}
+/* CUIDADOS */
+section.cuidados p{
+  color: #7D7987;
+}
+section.cuidados div ul li{
+  display: flex;
+  justify-content: space-between;
 }
