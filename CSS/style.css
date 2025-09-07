@@ -9,18 +9,26 @@ a{
 }
 
 /*---------------Header---------------*/
-
+header nav h2{
+  margin-right: 60vw;
+}
 header nav {
     display: flex;
     justify-content: space-between;
 }
-header nav ul {
+header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 17px 0 17px;
+}
+header nav ul{
+  display: flex;
+  
 }
 header ul li{
   color: #7D7987;
+  padding: 0 20px;
 }
 header span{
   color: #458FF6;
@@ -34,6 +42,13 @@ header button{
   padding: 5px 20px 5px 20px;
   border-radius: 20px;
 }
+header img{
+  width: 30vw;
+}
+header section.saberMais p{
+ text-align: right;
+}
+
 /* CUIDADOS */
 section.cuidados p{
   color: #7D7987;
